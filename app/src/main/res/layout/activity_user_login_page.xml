@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F1F5FB"
+    android:padding="20dp"
+    tools:context=".User_LoginPage">
+
+    <ImageView
+        android:id="@+id/loginImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/make_a_call"/>
+
+    <TextView
+        android:id="@+id/loginLogoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello There, Welcome Back"
+        android:textSize="40sp"
+        android:includeFontPadding="false"
+        android:textColor="#000"
+        android:fontFamily="@font/bungee"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in to continue"
+        android:fontFamily="@font/antic"
+        android:textAllCaps="true"
+        android:includeFontPadding="false"
+        android:textColor="#777"
+        android:textSize="15sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <com.hbb20.CountryCodePicker
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/black_border"
+            app:ccpDialog_backgroundColor="@color/cppBackground"
+            app:ccpDialog_searchEditTextTint="@color/cppEditText"
+            app:ccp_autoDetectCountry="true"
+            app:ccp_showFlag="true"
+            app:ccp_showFullName="true"
+            app:ccp_showNameCode="true" />
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/loginUserPhoneNumber"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            app:startIconDrawable="@drawable/phone_number_icon"
+            android:textColorHint="#000"
+            app:boxStrokeColor="#000"
+            app:endIconTint="#000"
+            app:hintTextColor="#000"
+            app:startIconTint="#000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="11"
+                android:textColor="#000"
+                android:textColorHighlight="#000"
+                android:textColorHint="#000"
+                android:textColorLink="#000"
+                android:textIsSelectable="false" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/loginAdminEmail"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            app:startIconDrawable="@drawable/ic_user"
+            android:textColorHint="#000"
+            app:boxStrokeColor="#000"
+            app:endIconTint="#000"
+            app:hintTextColor="#000"
+            app:startIconTint="#000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000"
+                android:maxLength="30"
+                android:textColorHighlight="#000"
+                android:textColorHint="#000"
+                android:textColorLink="#000" />
+        </com.google.android.material.textfield.TextInputLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                android:text="Remember Me"
+                android:buttonTint="#000"
+                android:textColor="#000"/>
+        </LinearLayout>
+
+
+
+<!--        <Button-->
+<!--            android:layout_width="200dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="#00000000"-->
+<!--            android:text="Forget Password?"-->
+<!--            android:layout_gravity="right"-->
+<!--            android:elevation="0dp"-->
+<!--            android:layout_margin="5dp"/>-->
+
+        <Button
+            android:id="@+id/loginUserButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:background="#000"
+            android:text="Go"
+            android:textColor="#fff"
+            app:backgroundTint="@android:color/black" />
+
+        <Button
+            android:id="@+id/loginUserButton2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:elevation="0dp"
+            android:text="Login As Admin/Merchandise"
+            app:backgroundTint="#fece2f" />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

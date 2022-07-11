@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".Services_Parcel_Delivery">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#fece2f">
+
+        <ImageView
+            android:onClick="goBacktoPreviousActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contextClickable="true"
+            android:src="@drawable/ic_arrow_back"
+            android:padding="10dp"
+            android:clickable="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chattago"
+            android:paddingTop="12dp"
+            android:layout_marginStart="60dp"
+            android:gravity="center_vertical"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textAllCaps="true"
+            android:fontFamily="@font/muli_black"/>
+
+    </RelativeLayout>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/loginImage"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:src="@drawable/service_parcel_delivery_icon"/>
+
+    <TextView
+        android:id="@+id/loginLogoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Parcel delivery service"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:fontFamily="@font/bungee"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="make order to take our  service"
+        android:layout_gravity="center"
+        android:textAllCaps="true"
+        android:textColor="#777"
+        android:textSize="12sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Product Name"
+            android:textColorHint="#000"
+            app:boxStrokeColor="#000"
+            app:endIconTint="#000"
+            app:hintTextColor="#000"
+            app:startIconTint="#000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000"
+                android:maxLength="30"
+                android:textColorHighlight="#000"
+                android:textColorHint="#000"
+                android:textColorLink="#000" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Approx Product Price"
+            app:passwordToggleTint="#000"
+            android:textColorHint="#000"
+            app:boxStrokeColor="#000"
+            app:endIconTint="#000"
+            app:hintTextColor="#000"
+            app:startIconTint="#000">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="#000"
+                android:textColorHighlight="#000"
+                android:textColorHint="#000"
+                android:textColorLink="#000" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Receiver's Name"
+            app:passwordToggleTint="#000"
+            android:textColorHint="#000"
+            app:boxStrokeColor="#000"
+            app:endIconTint="#000"
+            app:hintTextColor="#000"
+            app:startIconTint="#000">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLength="30"
+                android:textColor="#000"
+                android:textColorHighlight="#000"
+                android:textColorHint="#000"
+                android:textColorLink="#000" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Receiver's Location in Details"
+            android:textColorHint="#000"
+            app:boxStrokeColor="#000"
+            app:endIconTint="#000"
+            app:hintTextColor="#000"
+            app:startIconTint="#000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000"
+                android:maxLength="100"
+                android:textColorHighlight="#000"
+                android:textColorHint="#000"
+                android:textColorLink="#000" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Receiver's Phone Number"
+            app:passwordToggleTint="#000"
+            android:textColorHint="#000"
+            app:boxStrokeColor="#000"
+            app:endIconTint="#000"
+            app:hintTextColor="#000"
+            app:startIconTint="#000">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="11"
+                android:textColor="#000"
+                android:textColorHighlight="#000"
+                android:textColorHint="#000"
+                android:textColorLink="#000" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/loginAdminButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#000"
+            android:text="Confirm order"
+            android:textColor="#000"
+            app:backgroundTint="#fece2f" />
+
+    </LinearLayout>
+
+</LinearLayout>

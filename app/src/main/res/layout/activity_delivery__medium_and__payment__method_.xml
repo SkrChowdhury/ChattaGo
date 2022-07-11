@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".Delivery_Medium_and_Payment_Method_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#fece2f">
+
+        <ImageView
+            android:onClick="goBacktoPreviousActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contextClickable="true"
+            android:src="@drawable/ic_arrow_back"
+            android:padding="10dp"
+            android:clickable="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chattago"
+            android:paddingTop="12dp"
+            android:layout_marginStart="60dp"
+            android:gravity="center_vertical"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textAllCaps="true"
+            android:fontFamily="@font/muli_black"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/loginLogoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Delivery medium"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:fontFamily="@font/bungee"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="select your preferred delivery medium"
+            android:includeFontPadding="false"
+            android:layout_gravity="center"
+            android:textAllCaps="true"
+            android:textColor="#777"
+            android:textSize="12sp"/>
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:checkedButton="@id/btnA"
+            android:layout_margin="15dp"
+            android:orientation="vertical"
+            app:singleSelection="true">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_weight="1"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="Cycle"
+                android:includeFontPadding="false"
+                android:textSize="12sp"
+                android:fontFamily="@font/muli_black"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_weight="1"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="motor cycle"
+                android:includeFontPadding="false"
+                android:textSize="12sp"
+                android:fontFamily="@font/muli_black" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_weight="1"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="pickup van"
+                android:includeFontPadding="false"
+                android:textSize="12sp"
+                android:fontFamily="@font/muli_black"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_weight="1"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="trucks"
+                android:includeFontPadding="false"
+                android:textSize="12sp"
+                android:fontFamily="@font/muli_black" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_weight="1"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="refrigerated truck"
+                android:includeFontPadding="false"
+                android:textSize="12sp"
+                android:fontFamily="@font/muli_black"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_weight="1"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="freight trucks"
+                android:includeFontPadding="false"
+                android:textSize="12sp"
+                android:fontFamily="@font/muli_black" />
+
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="payment method"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:fontFamily="@font/bungee"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="select your preferred payment method"
+            android:includeFontPadding="false"
+            android:layout_gravity="center"
+            android:textAllCaps="true"
+            android:textColor="#777"
+            android:textSize="12sp"/>
+
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:checkedButton="@id/btnA"
+            android:layout_margin="15dp"
+            app:singleSelection="true">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_weight="1"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="pre-paid bkash"
+                android:includeFontPadding="false"
+                android:textSize="12sp"
+                android:fontFamily="@font/muli_black"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_weight="1"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="cash on DELIVERY"
+                android:includeFontPadding="false"
+                android:textSize="12sp"
+                android:fontFamily="@font/muli_black" />
+
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        android:layout_margin="10dp"
+        android:text="Confirm order"
+        android:textColor="#000"
+        app:backgroundTint="#fece2f" />
+
+</LinearLayout>

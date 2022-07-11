@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Admin_UsersOrderList_Page"
+    android:background="#fece2f">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/wendy_one"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:text="Orders From Users"
+            android:textAllCaps="true"
+            android:textColor="#000"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/user_order_illustration"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/round_corner_for_user_my_order_list"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="8dp"
+                android:background="@drawable/round_corner_for_navigation_drawer"
+                android:layout_margin="15dp">
+
+                <ImageView
+                    android:layout_weight=".5"
+                    android:layout_width="80dp"
+                    android:layout_gravity="center"
+                    android:layout_height="80dp"
+                    android:src="@drawable/user_order_list_icon2"/>
+
+                <LinearLayout
+                    android:layout_weight="1.5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/bungee"
+                        android:text="Sakkhor chowdhury"
+                        android:includeFontPadding="false"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/bungee"
+                        android:text="Bank deposit"
+                        android:textStyle="bold"
+                        android:includeFontPadding="false"
+                        android:padding="10dp"
+                        android:textSize="12sp"/>
+
+                    <Button
+                        android:id="@+id/details_trackingUpdate_Button1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Details &amp; Tracking Update "
+                        android:fontFamily="@font/muli_black"
+                        android:textSize="12sp"
+                        android:onClick="DetailsAndTrackingButton"
+                        android:padding="10dp"
+                        style="@style/Widget.AppCompat.Button.Colored"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_weight=".5"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ic_delete"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="8dp"
+                android:background="@drawable/round_corner_for_navigation_drawer"
+                android:layout_margin="15dp">
+
+                <ImageView
+                    android:layout_weight=".5"
+                    android:layout_width="80dp"
+                    android:layout_gravity="center"
+                    android:layout_height="80dp"
+                    android:src="@drawable/user_order_list_icon2"/>
+
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/bungee"
+                        android:text="Ahmed Asif"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                        android:includeFontPadding="false"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/bungee"
+                        android:text="medicine items"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                        android:includeFontPadding="false"
+                        android:textSize="12sp"/>
+
+                    <Button
+                        android:id="@+id/details_trackingUpdate_Button2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Details &amp; Tracking Update "
+                        android:fontFamily="@font/muli_black"
+                        android:textSize="12sp"
+                        android:padding="10dp"
+                        android:onClick="DetailsAndTrackingButton"
+                        style="@style/Widget.AppCompat.Button.Colored"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_weight=".5"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ic_delete"
+                    />
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="8dp"
+                android:background="@drawable/round_corner_for_navigation_drawer"
+                android:layout_margin="15dp">
+
+                <ImageView
+                    android:layout_weight=".5"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/user_order_list_icon2"/>
+
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/bungee"
+                        android:text="Asif SOhan"
+                        android:includeFontPadding="false"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/bungee"
+                        android:text="Grocery items"
+                        android:includeFontPadding="false"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                        android:textSize="12sp"/>
+
+                    <Button
+                        android:id="@+id/details_trackingUpdate_Button3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Details &amp; Tracking Update "
+                        android:fontFamily="@font/muli_black"
+                        android:textSize="12sp"
+                        android:padding="10dp"
+                        android:onClick="DetailsAndTrackingButton"
+                        style="@style/Widget.AppCompat.Button.Colored"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_weight=".5"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ic_delete"
+                    />
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="8dp"
+                android:background="@drawable/round_corner_for_navigation_drawer"
+                android:layout_margin="15dp">
+
+                <ImageView
+                    android:layout_weight=".5"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/user_order_list_icon2"/>
+
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/bungee"
+                        android:text="Sahnawaj Mahmood"
+                        android:includeFontPadding="false"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/bungee"
+                        android:text="Laundry items"
+                        android:includeFontPadding="false"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                        android:textSize="12sp"/>
+
+                    <Button
+                        android:id="@+id/details_trackingUpdate_Button4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Details &amp; Tracking Update "
+                        android:fontFamily="@font/muli_black"
+                        android:textSize="12sp"
+                        android:padding="10dp"
+                        android:onClick="DetailsAndTrackingButton"
+                        style="@style/Widget.AppCompat.Button.Colored"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_weight=".5"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ic_delete"
+                    />
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="8dp"
+                android:background="@drawable/round_corner_for_navigation_drawer"
+                android:layout_margin="15dp">
+
+                <ImageView
+                    android:layout_weight=".5"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/user_order_list_icon2"/>
+
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/bungee"
+                        android:text="As if"
+                        android:textStyle="bold"
+                        android:includeFontPadding="false"
+                        android:padding="10dp"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/bungee"
+                        android:text="gift parcel"
+                        android:includeFontPadding="false"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                        android:textSize="12sp"/>
+
+                    <Button
+                        android:id="@+id/details_trackingUpdate_Button5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Details &amp; Tracking Update "
+                        android:fontFamily="@font/muli_black"
+                        android:textSize="12sp"
+                        android:padding="10dp"
+                        android:onClick="DetailsAndTrackingButton"
+                        style="@style/Widget.AppCompat.Button.Colored"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_weight=".5"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ic_delete"
+                    />
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="8dp"
+                android:background="@drawable/round_corner_for_navigation_drawer"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="75dp"
+
+                >
+
+                <ImageView
+                    android:layout_weight=".5"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/user_order_list_icon2"/>
+
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/bungee"
+                        android:text="pranab das"
+                        android:includeFontPadding="false"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/bungee"
+                        android:text="food items"
+                        android:includeFontPadding="false"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                        android:textSize="12sp"/>
+
+                    <Button
+                        android:id="@+id/details_trackingUpdate_Button6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Details &amp; Tracking Update "
+                        android:fontFamily="@font/muli_black"
+                        android:textSize="12sp"
+                        android:onClick="DetailsAndTrackingButton"
+                        android:padding="10dp"
+                        style="@style/Widget.AppCompat.Button.Colored"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_weight=".5"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ic_delete"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

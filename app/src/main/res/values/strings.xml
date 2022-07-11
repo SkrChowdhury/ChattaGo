@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">ChattaGo</string>
+
+
+    <!--    OTP Screen-->
+    <string name="otp_code_text">Co\nde</string>
+    <string name="otp_verification_text">Verification</string>
+    <string name="otp_description_text">Enter one time password sent on +8801674340116 </string>
+
+    <!--User Dashboard-->
+    <string name="users_orders">My Orders</string>
+    <string name="users_profile">Profile</string>
+    <string name="user_dashboard">Dashboard</string>
+
+
+    <!--    Contact Us Strings-->
+
+    <string name="contactUs_call"><a href="tel:+8801674340116">Call</a></string>
+    <string name="contactUs_messenger"><a href="http://m.me/ChattaGo">Messenger</a></string>
+    <string name="contactUs_facebook"><a href="http://www.facebook.com/ChattaGo">Facebook</a></string>
+    <string name="contactUs_whatsapp"><a href="http://wa.me/+8801674340116?text=I%20Need%20Help.%20Please%20Reply.">WhatsApp</a></string>
+    <string name="contactUs_address"><a href="http://goo.gl/maps/aCL77BBcFBFSJn8JA">Chawkbazar,Chittagong,Bangladesh.</a></string>
+
+
+</resources>

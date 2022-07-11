@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F1F5FB"
+    android:padding="20dp"
+    tools:context=".Admin_LoginPage">
+
+<ImageView
+    android:id="@+id/loginImage"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:src="@drawable/search_place"/>
+
+    <TextView
+        android:id="@+id/loginLogoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello There, Welcome Back"
+        android:includeFontPadding="false"
+        android:textSize="40sp"
+        android:textColor="#000"
+        android:fontFamily="@font/bungee"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in to continue"
+        android:includeFontPadding="false"
+        android:textAllCaps="true"
+        android:textColor="#777"
+        android:textSize="15sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/loginAdminEmail"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textColorHint="#000"
+            app:boxStrokeColor="#000"
+            app:endIconTint="#000"
+            app:hintTextColor="#000"
+            app:startIconTint="#000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColor="#000"
+                android:textColorHighlight="#000"
+                android:textColorHint="#000"
+                android:textColorLink="#000" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/loginAdminPassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            app:passwordToggleTint="#000"
+            android:textColorHint="#000"
+            app:boxStrokeColor="#000"
+            app:endIconTint="#000"
+            app:hintTextColor="#000"
+            app:passwordToggleEnabled="true"
+            app:startIconTint="#000">
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:inputType="textPassword" />-->
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="#000"
+                android:textColorHighlight="#000"
+                android:textColorHint="#000"
+                android:textColorLink="#000" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                android:text="Remember Me"
+                android:buttonTint="#000"
+                android:textColor="#000"/>
+
+            <Button
+                android:id="@+id/loginAdminForgetPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:text="Forget Password?"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/loginAdminButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#000"
+            android:text="Go"
+            android:onClick="ADminLoginButton"
+            android:textColor="#fff"
+            app:backgroundTint="@android:color/black" />
+
+    </LinearLayout>
+
+</LinearLayout>
